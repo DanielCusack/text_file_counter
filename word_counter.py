@@ -20,7 +20,7 @@ class Word_counter:
         if len (self.pathlist) == 0:
             raise IndexError('No files found, either the path was incorrect or the directory has no .txt files.') 
         for filename in self.pathlist:
-            self.filenamelist.append(filename)
+            self.filenamelist.append(filename.split('\\')[-1])
 
             with open(filename) as rawtext:
                 filetext=[]
@@ -45,4 +45,4 @@ if __name__ == '__main__':
     test_counter.separate()
     test_counter.count_frequency()
     print(test_counter.filefrequency)
-    print(test_counter.totalfrequencydict)
+    print(test_counter.totalfrequencycount)

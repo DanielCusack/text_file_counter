@@ -35,8 +35,16 @@ class Report:
     
     def create_report(self):
         'Create a .txt report in the archive folder for the top words in each file and the directory as a whole'
-        self.report=open(self.archivefoldername 
-                         + '/' + self.countedfoldername + '_report_{0}.txt'.format(time.strftime("%Y-%m-%d_%H-%M-%S")),'w')
+        try:
+            self.filepath = os.path.join(self.archivefoldername, self.countedfoldername.split('\\')[-1]
+                                         + '_report_{0}.txt'.format(time.strftime("%Y-%m-%d_%H-%M-%S")))
+            self.report = open(self.filepath, 'w')
+        except FileNotFoundError:
+            self.report=open(self.archivefoldername + '/' + self.countedfoldername
+                             + '_report_{0}.txt'.format(time.strftime("%Y-%m-%d_%H-%M-%S")),'w')
+        
+        #self.report=open(self.archivefoldername + '/' + self.countedfoldername
+        #                 + '_report_{0}.txt'.format(time.strftime("%Y-%m-%d_%H-%M-%S")),'w')
         
         #Write report introduction
         opener = 'This is a report on the frequency of word use of text files in the folder '
