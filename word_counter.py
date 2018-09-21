@@ -11,7 +11,7 @@ class Word_counter:
         self.filetextlist =        []
         #A list of Counter objects giving the frequency of occurrence of each word in a given file
         self.filefrequency =       []
-        #A COunter object giving the frequency of occurrence of each word for the whole directory
+        #A Counter object giving the frequency of occurrence of each word for the whole directory
         self.totalfrequencycount = Counter()
 
     def separate(self):
