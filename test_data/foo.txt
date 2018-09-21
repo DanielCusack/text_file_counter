@@ -1,0 +1,4 @@
+This is a random file with some text to use as an example for the file finder. Nothing of particular interest will be included in this file so
+don't worry about that. Also, here is an awkward	tab to make things harder. Hopefully all of this text will be separated correctly so the words
+can be counted. If it doesn't then the test should catch the problem and it can be fixed. Will we be able to stop this though? Let's assume
+we can write more. Will I stop writing the word will? More wills will come as it is nice text to see.

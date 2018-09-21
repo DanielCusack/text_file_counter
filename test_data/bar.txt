@@ -1,0 +1,4 @@
+This text is even less interesting than that in foo. It is completely meaningless and only exists to test the code. Foo and bar are used as
+placeholder names which apparently has its origins in military slang. Now 	 I am just padding the text out to get some more words for more
+comparisions. Speaking of which here are even more words that are padding out the file even further. Isn't it nice that the words keep coming?
+I hope I can stop soon. This should be nearly enough words which is good... or maybe not we simply don't know.
